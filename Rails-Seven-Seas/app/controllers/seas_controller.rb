@@ -6,7 +6,8 @@ class SeasController < ApplicationController
   end
 
   def show
-    @sea = Sea.find_by(params[:id])
+    params[:id] = params[:id].to_i #params[:id] comes back as a string for some reason
+    @sea = Sea.find_by(id: params[:id])
   end
 
   def new
