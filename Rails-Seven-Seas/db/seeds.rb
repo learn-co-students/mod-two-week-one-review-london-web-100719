@@ -1,3 +1,5 @@
+Sea.all.delete_all
+
 Sea.create(name: "Mediterranean",temperature: 68.3,bio: "Friendly, welcoming and warm. Everyone's got a few sirens in their closet, but I'm ready for love.",image_url:"https://cies.einaudi.cornell.edu/sites/cies/files/Mediterranean%20from%20istock%20%281%29.jpg",mood:"Happy-go-lucky",favorite_color:"Blue",scariest_creature:"Poseidon")
 Sea.create(name: "Java",temperature: 43.1,bio: "I took a midnight train going anYYYwhere.",image_url:"http://pixdaus.com/files/items/pics/9/87/278987_b7f697606999ec226af227bed106745a_large.jpg",mood: "Energetic",favorite_color: "Blue",scariest_creature:'compiling error',has_mermaids:false)
 Sea.create(name: "Arctic",temperature: 28.8,bio: "Don't be turned off by my chilling personality, I'm actually not.",image_url:"https://www.trinitynewsdaily.com/wp-content/uploads/2015/03/arctic-sea-ice.jpg",mood: "Salty",favorite_color: "Blue",scariest_creature: "Kraken")
