@@ -1,0 +1,25 @@
+
+<div class="container">
+    <div class="text-center">
+      <h1 class="text-center">7 Seas</h1>
+      <%= link_to "Add a Sea", new_sea_path, :style=>"margin: 0 auto", :class=> "btn btn-info" %> 
+    </div>
+
+    <% @seas.each do |sea| %>
+      <div class="col-md-4 text-center" style="padding: 1em">
+        <div class="card">
+
+          <%= link_to sea_path(sea) do %>
+            <%= image_tag sea.image_url, :class=>"card-img-top img-thumbnail", :style=>"height:15rem"%>
+          <% end %>
+
+          <div class="card-block">
+            <h4 class="card-title text-center"><%= sea.name %></h4>
+            <p class="card-text" style="height: 10rem"><%= sea.bio %></p>
+            <%= link_to "Sea Profile", sea_path(sea), :style=>"width: 100%", :class=> "btn btn-info" %> 
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>

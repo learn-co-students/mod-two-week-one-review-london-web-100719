@@ -1,6 +1,40 @@
 class SeasController < ApplicationController
   #define your controller actions here
 
+  def index
+    @seas = Sea.all
+  end
+
+  def show
+    params[:id] = params[:id].to_i #params[:id] comes back as a string for some reason
+    @sea = Sea.find_by(id: params[:id])
+  end
+
+  def new
+    @sea = Sea.new
+  end
+
+  def create
+    @sea = Sea.create(sea_params)
+    redirect_to sea_path(@sea)
+  end
+
+  def edit
+    @sea = Sea.find_by(id: params[:id])
+  end
+
+  def update
+    @sea = Sea.find_by(id: params[:id])
+    @sea.update(sea_params)
+    redirect_to sea_path(@sea)
+  end
+
+  def destroy
+    @sea = Sea.find_by(id: params[:id])
+    @sea.destroy
+    redirect_to seas_path
+  end
+
 
   private
   # In controller actions, use this private method to access sea params from forms.
