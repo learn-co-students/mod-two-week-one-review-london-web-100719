@@ -4,7 +4,12 @@
     <img src=<%=@sea.image_url%> class="img-fluid" style="width: 40vw" alt="me">
     <h2 class="text-center"><%= @sea.name %> </h2>
     <p><%= @sea.bio %></p>
-    <button class="btn btn-info" style="margin: 1em"><a href="/seas/<%=@sea.id%>/edit">Edit</a></button><button class="btn btn-info" style="margin: 1em"><a href="/seas">Back</a></button>
+    <!--
+    <button class="btn btn-info" style="margin: 1em"><a href="/seas/<%=@sea.id%>/edit">Edit</a></button>
+    <button class="btn btn-info" style="margin: 1em"><a href="/seas">Back</a></button>
+    -->
+    <%= link_to "Edit", edit_sea_path(@sea), :style=>"margin: 1em", :class=> "btn btn-info" %> 
+    <%= link_to "Back", seas_path, :style=>"margin: 1em", :class=> "btn btn-info" %> 
 
     <div>
       <ul class="list-group">

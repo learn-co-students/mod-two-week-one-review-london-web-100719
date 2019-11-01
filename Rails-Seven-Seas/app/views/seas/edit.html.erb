@@ -1,28 +1,28 @@
 <div class="container">
 <%= form_for @sea do |f| %>
   <%= f.label :name %>
-  <%= f.text_field :name, :class => 'form-control'   %>
+  <%= f.text_field :name, :class => 'form-control' %>
 
   <%= f.label :temperature %>
-  <%= f.number_field :temperature, :class => 'form-control'   %>
+  <%= f.number_field :temperature, :class => 'form-control' %>
 
   <%= f.label :bio %>
-  <%= f.text_field :bio, :class => 'form-control'   %>
+  <%= f.text_field :bio, :class => 'form-control' %>
 
   <%= f.label :image_url %>
-  <%= f.text_field :image_url, :class => 'form-control'   %>
+  <%= f.text_field :image_url, :class => 'form-control' %>
 
   <%= f.label :mood %>
-  <%= f.text_field :mood, :class => 'form-control'   %>
+  <%= f.text_field :mood, :class => 'form-control' %>
 
   <%= f.label :favorite_color %>
-  <%= f.text_field :favorite_color, :class => 'form-control'   %>
+  <%= f.text_field :favorite_color, :class => 'form-control' %>
 
   <%= f.label :scariest_creature %>
-  <%= f.text_field :scariest_creature, :class => 'form-control'   %>
+  <%= f.text_field :scariest_creature, :class => 'form-control' %>
 
   <%= f.label :has_mermaids %>
-  <%= f.check_box :has_mermaids, :class => 'form-control'   %>
+  <%= f.check_box :has_mermaids, :class => 'form-control' %>
 
   <%=  f.submit 'submit', :class => 'form-control btn btn-info' %>
 
@@ -35,8 +35,7 @@
     </div>
 
     <div class="col-sm-1">
-
-    <%= link_to "All Seas", seas_path, :style=>"margin: 0 auto", :class=> "btn btn-info" %> 
+      <%= link_to "All Seas", seas_path, :style=>"margin: 0 auto", :class=> "btn btn-info" %> 
     </div>
 
     <div class="col-sm-9">
@@ -57,9 +56,5 @@
       <% end %>
     </div>
 
-
-    
- 
-    
   </div>
 </div>
