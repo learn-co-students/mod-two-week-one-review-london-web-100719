@@ -21,8 +21,10 @@
   <%= f.label :scariest_creature %>
   <%= f.text_field :scariest_creature, :class => 'form-control' %>
 
+  <div>
   <%= f.label :has_mermaids %>
-  <%= f.check_box :has_mermaids, :class => 'form-control' %>
+  <%= f.check_box :has_mermaids %>
+  </div>
 
   <%=  f.submit 'submit', :class => 'form-control btn btn-info' %>
 
