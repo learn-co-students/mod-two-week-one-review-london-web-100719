@@ -29,6 +29,12 @@ class SeasController < ApplicationController
     redirect_to sea_path(@sea)
   end
 
+  def destroy
+    @sea = Sea.find_by(id: params[:id])
+    @sea.destroy
+    redirect_to seas_path
+  end
+
 
   private
   # In controller actions, use this private method to access sea params from forms.

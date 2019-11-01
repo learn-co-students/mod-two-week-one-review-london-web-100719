@@ -42,12 +42,24 @@
     <div class="col-sm-9">
     </div>
 
+    <!--
     <div class="col-sm-1">
-    <form action="/seas/<%=@sea.id%>" method="POST" style="margin: 0 auto">
-      <input type="hidden" name="_method" value="DELETE" />
-        <input class="btn btn-danger" type="submit" value="Delete"/>
-    </form>
+      <form action="/seas/<%=@sea.id%>" method="POST" style="margin: 0 auto">
+          <input type="hidden" name="_method" value="DELETE" />
+          <input class="btn btn-danger" type="submit" value="Delete"/>
+      </form>
     </div>
+    -->
+
+    <div class="col-sm-1">
+      <%= form_with url: sea_path(@sea), method: "delete"  do |f| %>
+        <%=  f.submit 'Delete', :class => ' btn btn-danger' %>
+      <% end %>
+    </div>
+
+
+    
+ 
     
   </div>
 </div>
