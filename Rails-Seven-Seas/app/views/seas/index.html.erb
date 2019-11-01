@@ -2,7 +2,8 @@
 <div class="container">
     <div class="text-center">
       <h1 class="text-center">7 Seas</h1>
-      <button class="btn btn-info" style="margin: 1em"><a href="/seas/new">Add a Sea</a></button>
+      <!--<button class="btn btn-info" style="margin: 1em"><a href="/seas/new">Add a Sea</a></button>-->
+      <%= link_to "Add a Sea", new_sea_path, :style=>"margin: 0 auto", :class=> "btn btn-info" %> 
     </div>
 
     <% @seas.each do |sea| %>
