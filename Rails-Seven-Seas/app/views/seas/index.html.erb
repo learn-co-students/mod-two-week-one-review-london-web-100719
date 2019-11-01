@@ -10,11 +10,13 @@
       <div class="col-md-4 text-center" style="padding: 1em">
         <div class="card">
 
+        <!--
           <a href="/seas/<%=sea.id%>"><img class="card-img-top img-thumbnail" style="height: 15rem" src="<%= sea.image_url %>" alt="sea"></a>
+        -->
 
 
           <%= link_to sea_path(sea) do %>
-            <%= image_tag "https://cies.einaudi.cornell.edu/sites/cies/files/Mediterranean%20from%20istock%20%281%29.jpg", :class=>"card-img-top img-thumbnail", :style=>"height:15rem"%>
+            <%= image_tag sea.image_url, :class=>"card-img-top img-thumbnail", :style=>"height:15rem"%>
           <% end %>
 
 
